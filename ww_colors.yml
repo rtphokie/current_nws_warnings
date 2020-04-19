@@ -1,0 +1,670 @@
+AF:
+  colors:
+    advisory: None
+    forecast: None
+    outlook: None
+    statement: None
+    synopsis: None
+    warning: None
+    watch: None
+  description: Ashfall
+AS:
+  colors:
+    advisory: None
+    forecast: None
+    outlook: None
+    statement: None
+    synopsis: None
+    warning: None
+    watch: None
+  description: Air Stagnation
+AV:
+  colors:
+    advisory: None
+    forecast: None
+    outlook: None
+    statement: None
+    synopsis: None
+    warning: None
+    watch: None
+  description: Avalanche
+BH:
+  colors:
+    advisory: None
+    forecast: None
+    outlook: None
+    statement: 40E0D0
+    synopsis: None
+    warning: None
+    watch: None
+  description: Beach Hazard
+BS:
+  colors:
+    advisory: None
+    forecast: None
+    outlook: None
+    statement: None
+    synopsis: None
+    warning: None
+    watch: None
+  description: Blowing Snow
+BW:
+  colors:
+    advisory: D8BFD8
+    forecast: None
+    outlook: None
+    statement: None
+    synopsis: None
+    warning: None
+    watch: None
+  description: Brisk Wind
+BZ:
+  colors:
+    advisory: None
+    forecast: None
+    outlook: None
+    statement: None
+    synopsis: None
+    warning: None
+    watch: None
+  description: Blizzard
+CF:
+  colors:
+    advisory: None
+    forecast: None
+    outlook: None
+    statement: None
+    synopsis: None
+    warning: None
+    watch: None
+  description: Coastal Flood
+DS:
+  colors:
+    advisory: None
+    forecast: None
+    outlook: None
+    statement: None
+    synopsis: None
+    warning: None
+    watch: None
+  description: Dust Storm
+DU:
+  colors:
+    advisory: None
+    forecast: None
+    outlook: None
+    statement: None
+    synopsis: None
+    warning: None
+    watch: None
+  description: Blowing Dust
+EC:
+  colors:
+    advisory: None
+    forecast: None
+    outlook: None
+    statement: None
+    synopsis: None
+    warning: None
+    watch: None
+  description: Extreme Cold
+EH:
+  colors:
+    advisory: None
+    forecast: None
+    outlook: None
+    statement: None
+    synopsis: None
+    warning: None
+    watch: None
+  description: Excessive Heat
+EW:
+  colors:
+    advisory: None
+    forecast: None
+    outlook: None
+    statement: None
+    synopsis: None
+    warning: None
+    watch: None
+  description: Extreme Wind
+FA:
+  colors:
+    advisory: 00FF7F
+    forecast: None
+    outlook: None
+    statement: None
+    synopsis: None
+    warning: 00FF00
+    watch: 2E8B57
+  description: Flood
+FF:
+  colors:
+    advisory: None
+    forecast: None
+    outlook: None
+    statement: None
+    synopsis: None
+    warning: 2E8B57
+    watch: 2E8B57
+  description: Flash Flood
+FG:
+  colors:
+    advisory: 708090
+    forecast: None
+    outlook: None
+    statement: None
+    synopsis: None
+    warning: None
+    watch: None
+  description: Dense Fog
+FL:
+  colors:
+    advisory: 00FF7F
+    forecast: None
+    outlook: None
+    statement: None
+    synopsis: None
+    warning: 00FF00
+    watch: 2E8B57
+  description: Flood
+FR:
+  colors:
+    advisory: 6495ED
+    forecast: None
+    outlook: None
+    statement: None
+    synopsis: None
+    warning: None
+    watch: None
+  description: Frost
+FW:
+  colors:
+    advisory: None
+    forecast: None
+    outlook: None
+    statement: None
+    synopsis: None
+    warning: FF1493
+    watch: None
+  description: Red Flag
+FZ:
+  colors:
+    advisory: None
+    forecast: None
+    outlook: None
+    statement: None
+    synopsis: None
+    warning: 483D8B
+    watch: 00FFFF
+  description: Freeze
+GL:
+  colors:
+    advisory: None
+    forecast: None
+    outlook: None
+    statement: None
+    synopsis: None
+    warning: DDA0DD
+    watch: FFC0CB
+  description: Gale
+HF:
+  colors:
+    advisory: None
+    forecast: None
+    outlook: None
+    statement: None
+    synopsis: None
+    warning: None
+    watch: None
+  description: Hurricane Force Wind
+HI:
+  colors:
+    advisory: None
+    forecast: None
+    outlook: None
+    statement: None
+    synopsis: None
+    warning: None
+    watch: None
+  description: Inland Hurricane Wind
+HP:
+  colors:
+    advisory: None
+    forecast: None
+    outlook: None
+    statement: None
+    synopsis: None
+    warning: None
+    watch: None
+  description: Heavy Sleet
+HS:
+  colors:
+    advisory: None
+    forecast: None
+    outlook: None
+    statement: None
+    synopsis: None
+    warning: None
+    watch: None
+  description: Heavy Snow
+HT:
+  colors:
+    advisory: None
+    forecast: None
+    outlook: None
+    statement: None
+    synopsis: None
+    warning: None
+    watch: None
+  description: Heat
+HU:
+  colors:
+    advisory: None
+    forecast: None
+    outlook: None
+    statement: None
+    synopsis: None
+    warning: None
+    watch: None
+  description: Hurricane
+HW:
+  colors:
+    advisory: None
+    forecast: None
+    outlook: None
+    statement: None
+    synopsis: None
+    warning: DAA520
+    watch: None
+  description: High Wind
+HY:
+  colors:
+    advisory: None
+    forecast: None
+    outlook: 90EE90
+    statement: None
+    synopsis: None
+    warning: None
+    watch: None
+  description: Hydrologic
+HZ:
+  colors:
+    advisory: None
+    forecast: None
+    outlook: EEE8AA
+    statement: None
+    synopsis: None
+    warning: None
+    watch: None
+  description: Hard Freeze
+IP:
+  colors:
+    advisory: None
+    forecast: None
+    outlook: None
+    statement: None
+    synopsis: None
+    warning: None
+    watch: None
+  description: Sleet
+IS:
+  colors:
+    advisory: None
+    forecast: None
+    outlook: None
+    statement: None
+    synopsis: None
+    warning: None
+    watch: None
+  description: Ice Storm
+LB:
+  colors:
+    advisory: None
+    forecast: None
+    outlook: None
+    statement: None
+    synopsis: None
+    warning: None
+    watch: None
+  description: Lake Effect Snow and Blowing Snow
+LE:
+  colors:
+    advisory: None
+    forecast: None
+    outlook: None
+    statement: None
+    synopsis: None
+    warning: None
+    watch: None
+  description: Lake Effect Snow
+LO:
+  colors:
+    advisory: None
+    forecast: None
+    outlook: None
+    statement: None
+    synopsis: None
+    warning: None
+    watch: None
+  description: Low Water
+LS:
+  colors:
+    advisory: 7CFC00
+    forecast: None
+    outlook: None
+    statement: 7CFC00
+    synopsis: None
+    warning: None
+    watch: None
+  description: Lakeshore Flood
+LW:
+  colors:
+    advisory: D2B48C
+    forecast: None
+    outlook: None
+    statement: None
+    synopsis: None
+    warning: None
+    watch: None
+  description: Lake Wind
+MA:
+  colors:
+    advisory: None
+    forecast: None
+    outlook: None
+    statement: FFDAB9
+    synopsis: None
+    warning: FFA500
+    watch: None
+  description: Marine
+MF:
+  colors:
+    advisory: 708090
+    forecast: None
+    outlook: None
+    statement: None
+    synopsis: None
+    warning: None
+    watch: None
+  description: Marine Dense Fog
+MS:
+  colors:
+    advisory: None
+    forecast: None
+    outlook: None
+    statement: None
+    synopsis: None
+    warning: None
+    watch: None
+  description: Marine Dense Smoke
+RB:
+  colors:
+    advisory: D8BFD8
+    forecast: None
+    outlook: None
+    statement: None
+    synopsis: None
+    warning: None
+    watch: None
+  description: Small Craft for Rough Bar
+RH:
+  colors:
+    advisory: None
+    forecast: None
+    outlook: None
+    statement: None
+    synopsis: None
+    warning: None
+    watch: None
+  description: Radiological Hazard
+RP:
+  colors:
+    advisory: None
+    forecast: None
+    outlook: None
+    statement: 40E0D0
+    synopsis: None
+    warning: None
+    watch: None
+  description: Rip Current
+SB:
+  colors:
+    advisory: None
+    forecast: None
+    outlook: None
+    statement: None
+    synopsis: None
+    warning: None
+    watch: None
+  description: Snow and Blowing Snow
+SC:
+  colors:
+    advisory: DDA0DD
+    forecast: None
+    outlook: None
+    statement: None
+    synopsis: None
+    warning: None
+    watch: None
+  description: Small Craft
+SE:
+  colors:
+    advisory: None
+    forecast: None
+    outlook: None
+    statement: None
+    synopsis: None
+    warning: None
+    watch: None
+  description: Hazardous Seas
+SI:
+  colors:
+    advisory: None
+    forecast: None
+    outlook: None
+    statement: None
+    synopsis: None
+    warning: None
+    watch: None
+  description: Small Craft for Winds
+SM:
+  colors:
+    advisory: None
+    forecast: None
+    outlook: None
+    statement: None
+    synopsis: None
+    warning: None
+    watch: None
+  description: Dense Smoke
+SN:
+  colors:
+    advisory: None
+    forecast: None
+    outlook: None
+    statement: None
+    synopsis: None
+    warning: None
+    watch: None
+  description: Snow
+SQ:
+  colors:
+    advisory: None
+    forecast: None
+    outlook: None
+    statement: None
+    synopsis: None
+    warning: None
+    watch: None
+  description: Snow Squall
+SR:
+  colors:
+    advisory: None
+    forecast: None
+    outlook: None
+    statement: None
+    synopsis: None
+    warning: 9400D3
+    watch: None
+  description: Storm
+SU:
+  colors:
+    advisory: BA55D3
+    forecast: None
+    outlook: None
+    statement: None
+    synopsis: None
+    warning: None
+    watch: None
+  description: High Surf
+SV:
+  colors:
+    advisory: None
+    forecast: None
+    outlook: None
+    statement: None
+    synopsis: None
+    warning: FFA500
+    watch: None
+  description: Severe Thunderstorm
+TI:
+  colors:
+    advisory: None
+    forecast: None
+    outlook: None
+    statement: None
+    synopsis: None
+    warning: None
+    watch: None
+  description: Inland Tropical Storm Wind
+TO:
+  colors:
+    advisory: None
+    forecast: None
+    outlook: None
+    statement: None
+    synopsis: None
+    warning: None
+    watch: FFFF00
+  description: Tornado
+TR:
+  colors:
+    advisory: None
+    forecast: None
+    outlook: None
+    statement: None
+    synopsis: None
+    warning: None
+    watch: None
+  description: Tropical Storm
+TS:
+  colors:
+    advisory: None
+    forecast: None
+    outlook: None
+    statement: None
+    synopsis: None
+    warning: None
+    watch: None
+  description: Tsunami
+TY:
+  colors:
+    advisory: None
+    forecast: None
+    outlook: None
+    statement: None
+    synopsis: None
+    warning: None
+    watch: None
+  description: Typhoon
+UP:
+  colors:
+    advisory: None
+    forecast: None
+    outlook: None
+    statement: None
+    synopsis: None
+    warning: None
+    watch: None
+  description: Ice Accretion
+VO:
+  colors:
+    advisory: None
+    forecast: None
+    outlook: None
+    statement: None
+    synopsis: None
+    warning: None
+    watch: None
+  description: Volcano
+WC:
+  colors:
+    advisory: None
+    forecast: None
+    outlook: None
+    statement: None
+    synopsis: None
+    warning: None
+    watch: None
+  description: Wind Chill
+WI:
+  colors:
+    advisory: D2B48C
+    forecast: None
+    outlook: None
+    statement: None
+    synopsis: None
+    warning: None
+    watch: None
+  description: Wind
+WS:
+  colors:
+    advisory: None
+    forecast: None
+    outlook: None
+    statement: None
+    synopsis: None
+    warning: FF69B4
+    watch: None
+  description: Winter Storm
+WW:
+  colors:
+    advisory: 7B68EE
+    forecast: None
+    outlook: None
+    statement: None
+    synopsis: None
+    warning: None
+    watch: None
+  description: Winter Weather
+ZF:
+  colors:
+    advisory: None
+    forecast: None
+    outlook: None
+    statement: None
+    synopsis: None
+    warning: None
+    watch: None
+  description: Freezing Fog
+ZR:
+  colors:
+    advisory: None
+    forecast: None
+    outlook: None
+    statement: None
+    synopsis: None
+    warning: None
+    watch: None
+  description: Freezing Rain
+ZY:
+  colors:
+    advisory: None
+    forecast: None
+    outlook: None
+    statement: None
+    synopsis: None
+    warning: None
+    watch: None
+  description: Freezing Spray
