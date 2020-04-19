@@ -18,6 +18,7 @@ import shutil
 from pprint import pprint
 import os
 import logging
+import datetime
 
 # These are DataSciencey so Google includes them in the container, just need to import them
 import requests
@@ -133,8 +134,10 @@ def main():
     m.readshapefile("IowaEnvMesonet/current_ww", 'current_ww')
 
     patches = {}
+    issuetimes = []
     for info, shape in zip(m.current_ww_info, m.current_ww):
         key = (info['PHENOM'], info['SIG'])
+        issuetimes.append(info['UPDATED'])
         if key not in patches.keys():
             patches[key] = []
         patches[key].append(Polygon(np.array(shape), True))
@@ -156,10 +159,13 @@ def main():
         legenditems.append(mpatches.Patch(color=f"#{color}", alpha=.9, label=legend_labels[key]
                                           ))
 
-    plt.legend(handles=legenditems,loc='lower center', bbox_to_anchor=(0.5, 0.95),
+    plt.legend(handles=legenditems,
+               bbox_to_anchor=(0,-0.15,1,1), loc='lower left',
                fontsize='x-small',
                ncol=5, fancybox=True, shadow=True)
-    plt.savefig('conus_ww.png')
+    plt.title(f'Active Alerts {max(issuetimes)}Z')
+
+    plt.savefig('conus_ww.png', bbox_inches='tight')
 
 def readconfig():
     significance={
@@ -179,12 +185,10 @@ class MyTestCase(unittest.TestCase):
 
     def setUp(self):
         # cache data fetched from URLs for 1 hour
-        requests_cache.install_cache('.test_cache', backend='sqlite', expire_after=500)
+        requests_cache.install_cache('.test_cache', backend='sqlite', expire_after=1500)
 
     def test_something(self):
         main()
-
-
 
 if __name__ == '__main__':
     main()
