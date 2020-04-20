@@ -186,7 +186,7 @@ FW:
     statement: None
     synopsis: None
     warning: FF1493
-    watch: None
+    watch: FFC0CB
   description: Red Flag
 FZ:
   colors:
