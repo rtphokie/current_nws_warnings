@@ -73,7 +73,7 @@ CF:
     advisory: None
     forecast: None
     outlook: None
-    statement: None
+    statement: 6B8E23
     synopsis: None
     warning: None
     watch: None
@@ -355,8 +355,8 @@ LS:
     outlook: None
     statement: 7CFC00
     synopsis: None
-    warning: None
-    watch: None
+    warning: 228B22
+    watch: 66CDAA
   description: Lakeshore Flood
 LW:
   colors:
