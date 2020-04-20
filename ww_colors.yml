@@ -526,7 +526,7 @@ SV:
     statement: None
     synopsis: None
     warning: FFA500
-    watch: None
+    watch: DB7093
   description: Severe Thunderstorm
 TI:
   colors:

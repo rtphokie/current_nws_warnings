@@ -39,35 +39,63 @@ logging.getLogger("matplotlib").setLevel(logging.WARNING)
 earth_radius_major = 6378137.000 # useful for more accurate rendering of Mercator and Lambert projections
 earth_radius_minor = 6356752.314
 
-def download_url(url, save_path, chunk_size=128):
-    r = requests.get(url, stream=True)
-    with open(save_path, 'wb') as fd:
-        for chunk in r.iter_content(chunk_size=chunk_size):
-            fd.write(chunk)
+# def download_url(url, save_path, chunk_size=128):
+#     r = requests.get(url, stream=True)
+#     with open(save_path, 'wb') as fd:
+#         for chunk in r.iter_content(chunk_size=chunk_size):
+#             fd.write(chunk)
+#
+# def get_latest_shapes(dir, filename, drawbounds=False,
+#                       urlbase='https://mesonet.agron.iastate.edu/data/gis/shape/4326/us'):
+#                                  #https://mesonet.agron.iastate.edu/data/gis/shape/4326/us/current_ww.dbf
+#      for ext in ['dbf', 'shp', 'shx']:
+#          if not os.path.exists(dir):
+#              logging.info(f"directory {dir} created")
+#              os.makedirs(dir)
+#          url = f'{urlbase}/{filename}.{ext}'
+#          print(url)
+#          response = requests.get(url, stream=True)
+#          with open(f"{dir}/{filename}.{ext}", 'wb') as out_file:
+#              shutil.copyfileobj(response.raw, out_file)
+#          del response
+#          logging.info(f'shapefile fetched {url}')
+
+def readconfig():
+    significance={
+        'W': 'Warning',
+        'Y': 'Advisory',
+        'A': 'Watch',
+        'S': 'Statement',
+        'F': 'Forecast',
+        'O': 'Outlook',
+        'N': 'Synopsis',
+    }
+    if not os.path.isfile('ww_colors.yml'):
+      download_from_web('https://raw.githubusercontent.com/rtphokie/current_nws_warnings/master/ww_colors.yml', '.', 'ww_colors.yml')
+    with open('ww_colors.yml') as file:
+        data = yaml.load(file)
+    return data, significance
+
+def download_from_web(url, dir, filename, stream=False):
+  print(f"fetching {url}")
+  response = requests.get(url, stream=stream)
+  if stream:
+    with open(f"{dir}/{filename}", 'wb') as out_file:
+      shutil.copyfileobj(response.raw, out_file)
+  else:
+    with open(f"{dir}/{filename}", 'w') as out_file:
+      out_file.write(response.text)
+  del response
 
 def get_latest_shapes(dir, filename, drawbounds=False,
                       urlbase='https://mesonet.agron.iastate.edu/data/gis/shape/4326/us'):
-                                 #https://mesonet.agron.iastate.edu/data/gis/shape/4326/us/current_ww.dbf
-     for ext in ['dbf', 'shp', 'shx']:
-         if not os.path.exists(dir):
-             logging.info(f"directory {dir} created")
-             os.makedirs(dir)
-         url = f'{urlbase}/{filename}.{ext}'
-         print(url)
-         response = requests.get(url, stream=True)
-         with open(f"{dir}/{filename}.{ext}", 'wb') as out_file:
-             shutil.copyfileobj(response.raw, out_file)
-         del response
-         logging.info(f'shapefile fetched {url}')
+    if not os.path.exists(dir):
+        os.makedirs(dir)
+    for ext in ['dbf', 'shp', 'shx']:
+       download_from_web(f'{urlbase}/{filename}.{ext}', dir, f'{filename}.{ext}', stream=True)
 
 def drap_map():
-    # clat = 35.28  # NC center
-    # clon = -79.02
-    # wid = 1600000 / 2
-    # hgt = 900000 / 2
     res = 'c'  # [c]rude (faster), [l]ow, [h]igh (slower)
-    logging.info(f"------------------------")
-    get_latest_shapes('IowaEnvMesonet', 'current_ww')
     fig = plt.figure(figsize=(12, 8), dpi=100)
     m = Basemap(llcrnrlon=-119, llcrnrlat=22, urcrnrlon=-64, urcrnrlat=49,
                 projection='lcc', lat_1=33, lat_2=45, lon_0=-95,
@@ -126,7 +154,8 @@ def ddraw_shapes(m, ax, dmas=['RALEIGH-DURHAM'], wfos=['RAH']):
 
 def main():
     lookup, significance = readconfig()
-
+    if not os.path.isfile('IowaEnvMesonet/current_ww.shp'):
+        get_latest_shapes('IowaEnvMesonet', 'current_ww')
     fig = plt.figure()
     m, ax = drap_map()
     # m.shadedrelief()
