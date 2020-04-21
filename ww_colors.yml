@@ -65,7 +65,7 @@ BZ:
     outlook: None
     statement: None
     synopsis: None
-    warning: None
+    warning: FF4500
     watch: None
   description: Blizzard
 CF:
