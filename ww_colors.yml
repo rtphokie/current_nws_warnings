@@ -70,7 +70,7 @@ BZ:
   description: Blizzard
 CF:
   colors:
-    advisory: None
+    advisory: 6B8E23
     forecast: None
     outlook: None
     statement: 6B8E23
@@ -95,7 +95,7 @@ DU:
     outlook: None
     statement: None
     synopsis: None
-    warning: None
+    warning: FFE4C4
     watch: None
   description: Blowing Dust
 EC:
@@ -250,7 +250,7 @@ HS:
   description: Heavy Snow
 HT:
   colors:
-    advisory: None
+    advisory: FF7F50
     forecast: None
     outlook: None
     statement: None
