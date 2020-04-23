@@ -545,7 +545,7 @@ TO:
     outlook: None
     statement: None
     synopsis: None
-    warning: None
+    warning: FF0000
     watch: FFFF00
   description: Tornado
 TR:
