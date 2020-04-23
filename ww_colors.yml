@@ -116,7 +116,7 @@ EH:
     statement: None
     synopsis: None
     warning: None
-    watch: None
+    watch: 800000
   description: Excessive Heat
 EW:
   colors:
