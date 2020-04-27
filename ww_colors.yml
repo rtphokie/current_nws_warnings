@@ -115,7 +115,7 @@ EH:
     outlook: None
     statement: None
     synopsis: None
-    warning: None
+    warning: C71585
     watch: 800000
   description: Excessive Heat
 EW:
