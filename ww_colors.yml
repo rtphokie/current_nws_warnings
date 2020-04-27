@@ -276,7 +276,7 @@ HW:
     statement: None
     synopsis: None
     warning: DAA520
-    watch: None
+    watch: B8860B
   description: High Wind
 HY:
   colors:
